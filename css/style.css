@@ -15,10 +15,12 @@ body {
     margin: 0;
     background-color: #020204;
     font-family: 'Jost', sans-serif;
+    color: var(--primary-color);
 }
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 img {
@@ -30,6 +32,30 @@ img {
     margin: 0 auto;
 }
 
+.btn {
+    min-width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 17px 60px;
+    transition: background-color .2s ease;
+}
+.btn:hover {
+    background: #5f3c19;
+}
+.btn-main {
+    background: var(--xl-color);
+}
+.btn-second {
+    background: #666681;
+}
 .header {
     border-bottom: 1px solid var(--header-line);
 }
@@ -130,6 +156,53 @@ img {
     top: -3px;
     right: -3px;
 }
+
+/* INTRO */
+.intro {
+    background-image: url(../img/big_cup_of_coffe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.intro:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 2, 4, 0.55);;
+}
+.into__wrapper {
+    padding: 20px 0;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.intro__block {
+    max-width: 565px;
+}
+.intro__title {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0 0 35px;
+}
+.intro__text {
+    margin-bottom: 0 0 35px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;   
+}
+.intro__actions {
+    display: flex;
+}
+.intro__actions .btn-main {
+    margin-right: 20px;
+}
+
 
 
 
